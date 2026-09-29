@@ -8,7 +8,7 @@
 # Product 1042: Wireless Mouse costs $24.99
 
 product = (1042, "Wireless Mouse", 24.99)
-print(f"Product {product[0]} {product[1]} costs ${product[2]}")
+print(f"Product {product[0]}: {product[1]} costs ${product[2]:.2f}")
 
 # 2 Student grade
 # A teacher exports a student’s name, course, and grade:
@@ -18,7 +18,8 @@ print(f"Product {product[0]} {product[1]} costs ${product[2]}")
 # Avery Chen earned 87% in Python Basics.
 
 student_record = ("Avery Chen", "Python Basics", 87)
-print(f"{student_record[0]} earned {student_record[2]}% in {student_record[1]}")
+student_name, class_name, grade = student_record
+print(f"{student_name} earned {grade}% in {class_name}")
 
 # 3 Delivery coordinates
 # A delivery app stores each location as a pair of coordinates:

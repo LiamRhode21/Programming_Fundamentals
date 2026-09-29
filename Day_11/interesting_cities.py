@@ -2,7 +2,9 @@ cities = ["Edmonton", "Paris", "Munich", "Berlin", "Amsterdam", "Prague"]
 
 cities.remove("Edmonton")
 
-cities.append(input("Enter an interesting city: "))
+new_city = input("Enter an interesting city: ")
+
+cities.append(new_city)
 
 cities.sort()
 
