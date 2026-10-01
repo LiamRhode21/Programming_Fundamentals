@@ -6,7 +6,7 @@ topping_number = 1
 toppings_added = 0
 
 while len(toppings) < 5:
-    toppings.append(input(f"Enter topping {topping_number}: ").lower())
+    toppings.append(input(f"Enter topping {topping_number}: ").lower().strip())
     topping_number += 1
 
 print("Requested toppings:")
@@ -21,6 +21,16 @@ for topping in toppings:
     else:
         print(f"Adding {topping}")
         toppings_added += 1
+
+# for topping in toppings:
+#     if topping in sold_out:
+#         print(f"Sorry, {topping} is sold out!")
+#         continue
+#     if topping in banned_toppings:
+#         print(f"{topping} is banned!")
+#         continue
+#     print(f"Adding {topping}")
+#     toppings_added += 1
 
 toppings_total = toppings_added * 2
 

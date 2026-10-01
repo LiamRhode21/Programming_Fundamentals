@@ -5,5 +5,5 @@ for index, day in enumerate(days_of_week, start= 1):
     print(f"{day} is day {index} of the week")
     if day in days_of_weekend:
         print(f"{day} is a weekend day")
-    if day not in days_of_weekend:
+    else:
         print(f"{day} is a weekday")
