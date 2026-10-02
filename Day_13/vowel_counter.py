@@ -1,4 +1,4 @@
-word = input("Enter a word: ")
+word = input("Enter a word: ").strip().lower()
 vowels = ("a", "e", "i", "o", "u")
 vowel_counter = 0
 
