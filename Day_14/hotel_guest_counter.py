@@ -28,6 +28,15 @@ for tuple in room_records:
     print(f"Floor: {floor} | Room: {room} | Guests: {guests_per_room}")
 
 print(f"\nTotal guests: {guests_total}")
+
+
+
+
+print("HOTEL ROOM SUMMARY\n")
+print(f"{"Floor":<8}{"Room":<8}{"Guests":<8}")
+print("-" * 24)
+for floor, room, guests_per_room in room_records:
+    print(f"{floor:<8}{room:<8}{guests_per_room:<8}")
 #     4. Keep a running total and print the total number of guests after all rooms have been checked.
 # Assume the user enters valid whole numbers: at least 1 floor and 1 room per floor, and 0 or more guests per room.
 # Sample run
