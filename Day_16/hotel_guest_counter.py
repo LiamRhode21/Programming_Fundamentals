@@ -3,7 +3,6 @@ rooms = int(input("Rooms per floor: "))
 
 floor = 1
 total_guests = 0
-floor_guests = 0
 floor_guests_list = []
 
 while floor <= floors:
