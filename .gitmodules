@@ -1,3 +1,6 @@
 [submodule "assignment-2-a01-liamrhode21"]
 	path = assignment-2-a01-liamrhode21
 	url = https://github.com/NAIT-SDEV1001/assignment-2-a01-liamrhode21
+[submodule "lab-3-a01-liamrhode21"]
+	path = lab-3-a01-liamrhode21
+	url = https://github.com/NAIT-SDEV1001/lab-3-a01-liamrhode21
