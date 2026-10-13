@@ -16,5 +16,6 @@ while True:
         print("Too low!")
         attempts += 1
     elif int(user_input) == secret_number:
+        attempts += 1
         print(f"Correct! You guessed it in {attempts} attempts")
         break
