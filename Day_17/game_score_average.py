@@ -11,7 +11,7 @@ while game_score != -1:
             raise ValueError("Game score must be between 0 and 100")
 
     except ValueError as error:
-        print("please only enter integers and game score must be between 0 and 100")
+        print(f"please only enter integers: {error}")
         invalid_entry += 1
         continue
 
@@ -24,7 +24,6 @@ try:
 
 except ZeroDivisionError:
     print("No values entered")
-    invalid_entry += 1
 
 else:
     print(f"The average score is {score_average:.2f}")
