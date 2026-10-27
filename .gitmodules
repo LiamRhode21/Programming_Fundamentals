@@ -4,3 +4,6 @@
 [submodule "lab-3-a01-liamrhode21"]
 	path = lab-3-a01-liamrhode21
 	url = https://github.com/NAIT-SDEV1001/lab-3-a01-liamrhode21
+[submodule "lab-4-a01-liamrhode21"]
+	path = lab-4-a01-liamrhode21
+	url = https://github.com/NAIT-SDEV1001/lab-4-a01-liamrhode21
