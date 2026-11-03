@@ -8,7 +8,7 @@
 from .display import display_welcome,display_output
 # from display import *          * means all functions
 from .pricing import calculate_total
-from .validation import get_valid
+from .validation import get_valid_int
 
 
 def main():
@@ -16,7 +16,7 @@ def main():
     
     display_welcome()
     item_name = input("Snack name: ")
-    quantity = get_valid()
+    quantity = get_valid_int("Enter number of snacks")
     # total = calculate_total(quantity, UNIT_PRICE)
     # total = calculate_total(quantity)
     total = calculate_total(quantity = quantity, unit_price = UNIT_PRICE)
