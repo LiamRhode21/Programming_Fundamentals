@@ -36,11 +36,25 @@ def write_artists_to_file(file_path, artists):
         for artist in artists:
             writer.writerow(artist)
 
+# read the file into a list of dictionaries
+# add a new key/value pair to each dictionary in a list and return the new list
+# new key/value will be listeners_per_member (monthly_listeners/members)
+# return the new list
+# call the function in the main() and write the new list of dictionaries (with the new key/value pair) to a new file called artists_listeners_per_member
+
+def artists_listeners_per_member(file_path):
+    artists = read_artists(file_path)
+    for artist in artists:
+        artist['listeners_per_member'] = round(int(artist['monthly_listeners']) / int(artist['members']))
+    return artists
 
 def main():
     file_path = Path(__file__).parent/"data"/"music_artists - Copy.csv"
     artists = read_artists(file_path)
     # pprint(artists)
+
+    Write_file_path = Path(__file__).parent/"data"/"artists_listeners_per_member.csv"
+    write_artists_to_file(Write_file_path, artists_listeners_per_member(file_path))
 
     popular_artists = filter_by_min_listeners(file_path,12500000)
     pprint(popular_artists)
